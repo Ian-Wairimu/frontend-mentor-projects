@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+  font-family: "DM Sans";
+}
+
+.outer-wrapper {
+  background-color: var(--Cream);
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-wrapper {
+  gap: 2rem;
+  display: grid;
+}
+
+/* Orange Balance Banner */
+.balance-wrapper {
+  background-color: var(--Soft-red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  border-radius: 20px;
+  padding: 0 2rem;
+}
+
+.balance h2 {
+  color: rgb(241, 241, 241);
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.balance p {
+  color: var(--Very-pale-orange);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.spending-wrapper {
+  background-color: white;
+  height: 55vh;
+  width: 30vw;
+  border-radius: 20px;
+  padding: 2rem;
+  display: grid;
+}
+
+.spending-wrapper h2 {
+  font-size: 2rem;
+}
+
+hr {
+  height: 1px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.this-month {
+  color: gray;
+}
+
+.price {
+  color: var(--Dark-brown);
+  font-size: 3rem;
+  font-weight: bold;
+}
