@@ -187,7 +187,7 @@ p {
   /********** HEADER **********/
   .intro {
     display: grid;
-    height: 70vh;
+    height: 80vh;
     align-content: center;
     justify-items: center;
     text-align: center;
