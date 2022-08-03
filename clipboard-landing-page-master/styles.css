@@ -39,6 +39,10 @@ p {
   line-height: 1.5;
 }
 
+.sub-text {
+  line-height: 2;
+}
+
 /********** HEADER **********/
 .intro {
   display: grid;
@@ -67,7 +71,6 @@ p {
 .intro-text {
   font-size: 1.3rem;
   letter-spacing: 0.5px;
-
   color: var(--Grayish-Blue);
   width: min(800px, 70%);
 }
@@ -81,11 +84,11 @@ p {
   margin-bottom: 5rem;
 }
 
-.intro-sub-title {
+.sub-title {
   font-size: 2.2rem;
 }
 
-.intro-sub-text {
+.sub-text {
   font-size: 1rem;
   color: var(--Grayish-Blue);
   text-align: center;
@@ -131,12 +134,12 @@ p {
 .imac-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  align-items: center;
   height: 50vh;
 }
 
 .img-imac {
-  background-image: url(./images/image-computer.png);
-  z-index: 100;
   background-repeat: no-repeat;
   transform: translateX(-5%);
   height: 600px;
@@ -144,9 +147,9 @@ p {
 
 .imac-aside {
   display: grid;
-  align-content: start;
-  gap: 3rem;
-  margin-top: 4rem;
+  justify-self: center;
+  gap: 4rem;
+  margin: 4rem 6rem 4rem 0;
   width: 50%;
 }
 
@@ -155,8 +158,13 @@ p {
 }
 
 .imac-aside p {
-  line-height: 2;
   color: var(--Grayish-Blue);
+}
+
+/********** Tablet Section **********/
+.tablet-section {
+  margin-top: 20rem;
+  text-align: center;
 }
 
 /********** MOBILE VIEW **********/
@@ -174,7 +182,7 @@ p {
   /********** HEADER **********/
   .intro {
     display: grid;
-    height: 80vh;
+    height: 70vh;
     align-content: center;
     justify-items: center;
     text-align: center;
@@ -228,16 +236,16 @@ p {
     justify-items: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 
-  .intro-sub-title {
+  .sub-title {
     font-size: 1.5rem;
     width: min(800px, 70%);
     text-align: center;
   }
 
-  .intro-sub-text {
+  .sub-text {
     font-size: 1rem;
     color: var(--Grayish-Blue);
     width: min(800px, 80%);
@@ -257,5 +265,46 @@ p {
   .btn-mac:hover {
     background-color: var(--Lighter-Blue);
     transition: 0.2s ease-in-out;
+  }
+
+  /********** iMac Section **********/
+  .imac-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .img-imac {
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateX(0%);
+    height: auto;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
+  .imac-aside {
+    display: grid;
+    justify-self: center;
+    gap: 4rem;
+    margin: 4rem 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .imac-aside h3 {
+    font-size: 1.5rem;
+  }
+
+  .imac-aside p {
+    color: var(--Grayish-Blue);
+  }
+
+  /********** Tablet Section **********/
+  .tablet-section {
+    margin-top: 20rem;
+    text-align: center;
   }
 }
