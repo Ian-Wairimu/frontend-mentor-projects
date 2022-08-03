@@ -167,6 +167,11 @@ p {
   text-align: center;
 }
 
+.tablet-section .sub-text {
+  margin-bottom: 5rem;
+  width: min(600px, 70%);
+}
+
 /********** MOBILE VIEW **********/
 @media (max-width: 500px) {
   h1,
@@ -240,7 +245,7 @@ p {
   }
 
   .sub-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: min(800px, 70%);
     text-align: center;
   }
@@ -304,7 +309,21 @@ p {
 
   /********** Tablet Section **********/
   .tablet-section {
-    margin-top: 20rem;
+    margin-top: 25rem;
+  }
+
+  .tablet-section .sub-title {
     text-align: center;
+    width: min(800px, 70%);
+    margin: 0 auto;
+  }
+
+  .tablet-section .sub-text {
+    width: min(800px, 80%);
+    margin-top: 1rem;
+  }
+
+  .img-tablet {
+    max-width: 90vw;
   }
 }
