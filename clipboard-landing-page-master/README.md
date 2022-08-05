@@ -2,7 +2,7 @@
 
 ![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)
 
-!(./images/bjj.jpg)
+![](./images/bjj.jpg)
 
 ## Welcome! 👋
 
