@@ -67,7 +67,7 @@ My solution was to add a media query for tablets:
 
 ### Useful resources
 
-- [A Complete Guide to Grid ](https://css-tricks.com/snippets/css/complete-guide-grid/) - This helped me for laying out all of pages elements. I really liked this guide and will use it going forward.
+- [A Complete Guide to Grid ](https://css-tricks.com/snippets/css/complete-guide-grid/) - This helped me for laying out all of page elements. I really liked this guide and will use it going forward.
 
 ## Author
 
