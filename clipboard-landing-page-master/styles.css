@@ -512,6 +512,10 @@ svg path:hover {
     width: min(800px, 70%);
   }
 
+  .sub-intro {
+    margin: 5rem 0;
+  }
+
   .sub-text {
     font-size: 1rem;
     color: var(--Grayish-Blue);
