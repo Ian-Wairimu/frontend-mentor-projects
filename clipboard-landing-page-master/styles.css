@@ -19,7 +19,6 @@
 
 body {
   font-family: "Bai Jamjuree", "sans-serif";
-  background-color: var(--Light-Grey);
   margin: 0 auto;
 }
 
@@ -197,7 +196,7 @@ p {
 }
 
 .supercharge-logos {
-  width: 50px;
+  width: 40px;
 }
 
 .card {
@@ -207,12 +206,85 @@ p {
 }
 
 .card-title {
+  font-size: 1.2rem;
 }
 
 .card-text {
   width: min(700px, 80%);
   line-height: 2;
   color: var(--Grayish-Blue);
+}
+
+/********** Company Logos **********/
+.company-logos-section {
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(5, minmax(200px, 10%));
+
+  margin-top: 10rem;
+}
+
+.company-card {
+}
+
+/********** Clipboard for IOS and Mac OS **********/
+.clipboard-section {
+  margin: 5rem 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+  height: 500px;
+}
+
+.clipboard-section .sub-text {
+  width: min(800px, 65%);
+}
+.clipboard-section .cta-buttons {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/********** Footer **********/
+footer {
+  background-color: var(--Light-Grey);
+}
+
+.footer-containers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+
+.footer-logo {
+  width: 4rem;
+}
+/* Footer Logo & Links */
+.footer-logo-links {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+  column-gap: 10rem;
+}
+
+footer a {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 1.2rem;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+  display: flex;
+  gap: 1rem;
 }
 
 /********** MOBILE VIEW **********/
@@ -408,5 +480,78 @@ p {
   .card-text {
     width: min(700px, 80%);
     line-height: 2;
+  }
+
+  /********** Company Logos **********/
+  .company-logos-section {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    margin: 10rem 0;
+  }
+
+  .company-card {
+  }
+
+  /********** Clipboard for IOS and Mac OS **********/
+  .clipboard-section {
+    margin: 5rem 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    height: 500px;
+  }
+
+  .clipboard-section .sub-text {
+    width: min(800px, 80%);
+  }
+  .clipboard-section .cta-buttons {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /********** Footer **********/
+
+  .footer-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .footer-logo {
+    width: 3rem;
+    margin-top: 3rem;
+  }
+  /* Footer Logo & Links */
+  .footer-logo-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  footer a {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 1.2rem;
+  }
+
+  /* Social Media Icons */
+  .social-media-icons {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0;
   }
 }
