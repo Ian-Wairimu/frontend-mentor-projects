@@ -110,8 +110,12 @@ p {
   transition: 0.2s ease-in-out;
 }
 
-svg:hover {
-  fill: var(--Strong-Cyan);
+.footer-links a:hover {
+  color: var(--Strong-Cyan);
+}
+
+:hover {
+  transition: 0.2s ease-in-out;
 }
 
 /********** SUB INTRO **********/
