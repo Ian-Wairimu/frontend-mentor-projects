@@ -110,10 +110,6 @@ p {
   transition: 0.2s ease-in-out;
 }
 
-svg {
-  height: 300px;
-}
-
 svg:hover {
   fill: var(--Strong-Cyan);
 }
@@ -288,14 +284,16 @@ footer a {
 .social-media-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
   gap: 2rem;
 }
 
-.social-icons {
-  width: 200px;
+svg {
+  height: auto;
 }
 
-svg:hover {
+svg path:hover {
   fill: var(--Strong-Cyan);
 }
 
