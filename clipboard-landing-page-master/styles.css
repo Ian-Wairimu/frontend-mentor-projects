@@ -103,9 +103,15 @@ p {
   background-color: var(--Light-Blue);
 }
 
+/********** HOVER STATES **********/
+
 .btn-mac:hover {
   background-color: var(--Lighter-Blue);
   transition: 0.2s ease-in-out;
+}
+
+svg {
+  height: 300px;
 }
 
 /********** SUB INTRO **********/
@@ -276,13 +282,17 @@ footer a {
 
 /* Social Media Icons */
 .social-media-icons {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
 .social-icons {
-  width: 1.5rem;
+  width: 200px;
+}
+
+svg:hover {
+  fill: var(--Strong-Cyan);
 }
 
 /**********  (iPads, Tablets, 481px and 820px) **********/
