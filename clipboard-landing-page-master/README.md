@@ -17,8 +17,8 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](./design/screenshot01.png)
-![](./design/screenshot02.png)
+![](./design/screenshot01-desktop.png)
+![](./design/screenshot01-mobile.png)
 
 ### Links
 
