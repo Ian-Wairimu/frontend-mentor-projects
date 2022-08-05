@@ -30,7 +30,7 @@ Mobile Layout
 
 I opened the design in Adobe Photoshop and broke it into several different sections using yellow & blue rectangles. I looked at each section and then decided to use either CSS Grid / Flexbox to achieve the desired layout.
 
-I began working from the top down. Once I completed a section on desktop I would then ensure that it was also working on Mobile using a media query.
+I began working from the top down. Once I completed a section on desktop I would then ensure that it was also working on mobile using a media query.
 
 ![](./design/processes.png)
 
@@ -43,29 +43,27 @@ I began working from the top down. Once I completed a section on desktop I would
 
 ### What I learned
 
-1.  I an issue with chaning the colour of the social media icons (.SVG's) on :hover
+1.  I had issue with changing the colour of the social media icons (.SVG's) on :hover
 
 The solution was to specify 'svg path'
 
-```svg path:hover {
+```
+.svg path:hover {
   fill: var(--Strong-Cyan);
 }
 ```
 
-2.  I had issues getting this to work on Tablet sized devices.
+2.  I had issues getting this design to scale on tablet sized devices.
 
 My solution was to add a media query for tablets:
 
-@media only screen and (min-width: 481px) and (max-width: 820px) { }
+```
+@media only screen and (min-width: 481px) and (max-width: 820px) {
+
+}
+```
 
 3.  I wasn't sure if my HTML was completely semantically correct.
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-I'm going to continue working with CSS Grid & Flexbox to build page layouts.
-I'm also going to re-search how to use the CSS clamp() function. This will help text to scale better across multiple devices.
 
 ### Useful resources
 
