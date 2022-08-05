@@ -285,7 +285,11 @@ footer a {
 .social-media-icons {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.social-icons {
+  width: 1.5rem;
 }
 
 /********** MOBILE VIEW **********/
