@@ -5,19 +5,20 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [Screenshot](#screenshots)
+- [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Continued development](#continued-development)
+- [Useful resources](#useful-resources)
 
-### Screenshot
+### Screenshots
 
+Desktop Layout
 ![](./design/screenshot01-desktop.png)
+
+Mobile Layout
 ![](./design/screenshot01-mobile.png)
 
 ### Links
@@ -27,7 +28,11 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ## My process
 
-![](./design/screenshot02.png)
+I opened the design in Adobe Photoshop and broke it into several different sections using yellow & blue rectangles. I looked at each section and then decided to use either CSS Grid / Flexbox to achieve the desired layout.
+
+I began working from the top down. Once I completed a section on desktop I would then ensure that it was also working on Mobile using a media query.
+
+![](./design/processes.png)
 
 ### Built with
 
@@ -38,38 +43,33 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1.  I an issue with chaning the colour of the social media icons (.SVG's) on :hover
 
-To see how you can add code snippets, see below:
+The solution was to specify 'svg path'
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```svg path:hover {
+  fill: var(--Strong-Cyan);
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+2.  I had issues getting this to work on Tablet sized devices.
+
+My solution was to add a media query for tablets:
+
+@media only screen and (min-width: 481px) and (max-width: 820px) { }
+
+3.  I wasn't sure if my HTML was completely semantically correct.
 
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'm going to continue working with CSS Grid & Flexbox to build page layouts.
+I'm also going to re-search how to use the CSS clamp() function. This will help text to scale better across multiple devices.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [A Complete Guide to Grid ](https://css-tricks.com/snippets/css/complete-guide-grid/) - This helped me for laying out all of pages elements. I really liked this guide and will use it going forward.
 
 ## Author
 
