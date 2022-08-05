@@ -114,6 +114,10 @@ svg {
   height: 300px;
 }
 
+svg:hover {
+  fill: var(--Strong-Cyan);
+}
+
 /********** SUB INTRO **********/
 .sub-intro {
   display: grid;
