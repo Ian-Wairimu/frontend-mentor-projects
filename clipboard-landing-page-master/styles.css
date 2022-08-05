@@ -218,13 +218,13 @@ p {
   display: grid;
   justify-content: space-evenly;
   align-items: center;
-  grid-template-columns: repeat(5, minmax(200px, 10%));
+  grid-template-columns: repeat(5, minmax(100px, 10%));
   margin: 10rem 0;
 }
 
 /********** Clipboard for IOS and Mac OS **********/
 .clipboard-section {
-  margin: 5rem 0;
+  margin: 10rem 0;
   display: grid;
   justify-content: center;
   align-content: center;
