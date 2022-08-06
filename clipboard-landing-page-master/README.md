@@ -5,7 +5,8 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 ## Table of contents
 
 - [Overview](#overview)
-- [Screenshot](#screenshots)
+- [Original Design](#original-design)
+- [Screenshots Of My Design](#screenshots)
 - [Links](#links)
 - [My process](#my-process)
 - [Built with](#built-with)
@@ -13,12 +14,17 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 - [Continued development](#continued-development)
 - [Useful resources](#useful-resources)
 
+### Original Design
+
+- [Original Design](#screenshots)
+  ![](./design/original-design-desktop.jpg)
+
+![](./design/original-design-mobile.jpg)
+
 ### Screenshots
 
-Desktop Layout
 ![](./design/screenshot01-desktop.png)
 
-Mobile Layout
 ![](./design/screenshot01-mobile.png)
 
 ### Links
