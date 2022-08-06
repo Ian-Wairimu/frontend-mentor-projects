@@ -16,12 +16,11 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ### Original Design
 
-- [Original Design](#screenshots)
-  ![](./design/original-design-desktop.jpg)
+![](./design/original-design-desktop.jpg)
 
 ![](./design/original-design-mobile.jpg)
 
-### Screenshots
+### Screenshots of my design
 
 ![](./design/screenshot01-desktop.png)
 
