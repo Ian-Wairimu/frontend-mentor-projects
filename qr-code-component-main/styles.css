@@ -1,3 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
 * {
-  background-color: pink;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "Outfit", "Sans-serif";
+  background-color: var(--Light-gray);
+}
+
+h1 {
+  line-height: 1.5;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+/********** Outer Container **********/
+.outer-container {
+  display: grid;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-gray);
+}
+
+/********** Card Container **********/
+.card-container {
+  display: grid;
+  grid-template-rows: 70% 30%;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+
+  background-color: var(--White);
+  border-radius: 15px;
+  padding: 1rem;
+  width: 20rem;
+  border: 5px solid red;
+  text-align: center;
+}
+
+.card-image {
+  border-radius: 15px;
+}
+
+.card-text-content {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  color: var(--Dark-blue);
+  font-size: 1.4rem;
+}
+
+.card-text {
+  color: var(--Grayish-blue);
+  width: 90%;
+}
+
+/********** Attribution **********/
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/********** Mobile View **********/
