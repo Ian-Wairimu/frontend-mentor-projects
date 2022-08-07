@@ -42,7 +42,7 @@ img {
 /********** Card Container **********/
 .card-container {
   display: grid;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 2fr 1fr;
   align-items: center;
   justify-items: center;
   gap: 1.5rem;
