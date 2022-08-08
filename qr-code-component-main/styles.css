@@ -46,7 +46,6 @@ img {
   align-items: center;
   justify-items: center;
   gap: 1.5rem;
-
   background-color: var(--White);
   border-radius: 20px;
   padding: 1rem;
@@ -76,5 +75,3 @@ img {
   color: var(--Grayish-blue);
   width: 90%;
 }
-
-/********** Mobile View **********/
