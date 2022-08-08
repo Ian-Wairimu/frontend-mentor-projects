@@ -12,6 +12,7 @@
 
 :root {
   --Dark-cyan: hsl(158, 36%, 37%);
+  --Very-dark-green: hsl(159, 37%, 20%);
   --Cream: hsl(30, 38%, 92%);
   --Very-dark-blue: hsl(212, 21%, 14%);
   --Dark-grayish-blue: hsl(228, 12%, 48%);
@@ -52,8 +53,31 @@ img {
 
 /********** CARD SECTION IMAGE **********/
 .card-section-image {
+  position: relative;
+  display: block;
   grid-area: card-section-image;
   border-radius: 10px 0 0 10px;
+}
+
+.product-image {
+  position: relative;
+}
+
+.grayscale {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: linear 0.8s;
+}
+
+.grayscale:hover {
+  opacity: 0.1;
+}
+
+.card-section-image:hover {
+  transition: 1s;
 }
 
 /********** CARD SECTION TEXT **********/
@@ -123,10 +147,16 @@ h3 {
   width: 100%;
   font-size: 0.9rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .btn-logo {
   width: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--Very-dark-green);
+  transition: 0.3s ease-in;
 }
 
 /********** MOBILE VIEW **********/
