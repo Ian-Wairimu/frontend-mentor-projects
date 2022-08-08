@@ -13,7 +13,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./design/screenshot.png)
 
 ### Links
 
@@ -42,4 +42,4 @@ I then decided to CSS Grid to control the positioning of the card compenent and 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Smgy94)
+- Frontend Mentor - [@Smgy94](https://www.frontendmentor.io/profile/Smgy94)
