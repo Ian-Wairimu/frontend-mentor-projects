@@ -9,11 +9,10 @@
   text-decoration: none;
   border: none;
 }
-
 :root {
   --Dark-cyan: hsl(158, 36%, 37%);
   --Very-dark-green: hsl(159, 37%, 20%);
-  --Cream: hsl(30, 38%, 92%);
+  --Teal-background: hsla(173, 36%, 50%, 0.711);
   --Very-dark-blue: hsl(212, 21%, 14%);
   --Dark-grayish-blue: hsl(228, 12%, 48%);
   --White: hsl(0, 0%, 100%);
@@ -35,7 +34,7 @@ img {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: var(--Cream);
+  background-color: var(--Teal-background);
 }
 
 /********** CARD CONTAINER **********/
@@ -43,19 +42,18 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "card-section-image card-section-text"
-    "card-section-image card-section-text";
-
-  max-width: 38rem;
+    "image-original-dt card-section-text"
+    "image-original-dt card-section-text";
+  width: clamp(30rem, 50vw + 38rem, 40rem);
   border-radius: 10px;
   background-color: #fff;
 }
 
 /********** CARD SECTION IMAGE **********/
-.card-section-image {
+.image-original-dt {
   position: relative;
   display: block;
-  grid-area: card-section-image;
+  grid-area: image-original-dt;
   border-radius: 10px 0 0 10px;
 }
 
@@ -63,7 +61,7 @@ img {
   position: relative;
 }
 
-.grayscale {
+.image-grayscale-dt {
   position: absolute;
   left: 0;
   right: 0;
@@ -73,11 +71,19 @@ img {
   border-radius: 20px 0 0 20px;
 }
 
-.grayscale:hover {
+.image-grayscale-dt:hover {
   opacity: 0;
   transition: 1s;
 }
 
+/********** ORIGINAL IMAGE MOBILE **********/
+.image-original-mobile {
+  display: none;
+}
+
+.image-grayscale-mobile {
+  display: none;
+}
 /********** CARD SECTION TEXT **********/
 .card-section-text {
   grid-area: card-section-text;
@@ -106,7 +112,7 @@ h3 {
 /********** CARD TEXT **********/
 .card-text {
   color: var(--Dark-grayish-blue);
-  line-height: 1.7;
+  line-height: 1.8;
   width: clamp(10rem, 15rem, 20rem);
 }
 
@@ -157,35 +163,75 @@ h3 {
   transition: 0.3s ease-in;
 }
 
+.btn:active {
+}
+
 /********** MOBILE VIEW **********/
 @media (max-width: 500px) {
   /********** CARD CONTAINER **********/
   .card-container {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "card-section-image "
+      "image-original-dt"
       "card-section-text";
-    height: 90vh;
-    width: 90vw;
+    width: clamp(20rem, 90vw, 40rem);
+
     border-radius: 20px;
-    background-color: #fff;
   }
 
-  /********** CARD SECTION IMAGE **********/
-  .card-section-image {
-    grid-area: card-section-image;
-    background-image: url(./images/image-product-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: yellow;
+  /********** ORIGINAL IMAGE DESKTOP **********/
+  .image-original-dt {
+    grid-area: image-original-dt;
     border-radius: 20px 20px 0 0;
+    display: none;
+  }
+
+  /********** GRAYSCALE IMAGE DESKTOP **********/
+  .image-grayscale-dt {
+    display: none;
+  }
+
+  /********** ORIGINAL IMAGE MOBILE **********/
+  .image-original-mobile {
+    display: block;
+    border-radius: 20px 20px 0 0;
+  }
+
+  /********** GRAYSCALE IMAGE MOBILE **********/
+  .image-grayscale-mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: linear 0.8s;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .image-grayscale-mobile:hover {
+    opacity: 0;
+    transition: 1s;
   }
 
   /********** CARD SECTION TEXT **********/
   .card-section-text {
     grid-area: card-section-text;
-    padding: 2rem;
+    gap: 1rem;
+  }
+
+  /********** CARD TITLE **********/
+  .card-title {
+    width: 100%;
+  }
+
+  /********** CARD TEXT **********/
+  .card-text {
+    width: clamp(70%, 95%, 95%);
+  }
+
+  /********** BUTTON **********/
+  .btn {
+    padding: 1rem;
   }
 }
