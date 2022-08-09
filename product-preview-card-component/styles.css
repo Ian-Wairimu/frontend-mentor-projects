@@ -70,13 +70,11 @@ img {
   top: 0;
   bottom: 0;
   transition: linear 0.8s;
+  border-radius: 20px 0 0 20px;
 }
 
 .grayscale:hover {
-  opacity: 0.1;
-}
-
-.card-section-image:hover {
+  opacity: 0;
   transition: 1s;
 }
 
