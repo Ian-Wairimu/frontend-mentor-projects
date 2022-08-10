@@ -4,15 +4,18 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ## Table of contents
 
-- [Overview](#overview)
+- [Links](#links)
 - [Original Design](#original-design)
 - [Screenshots Of My Design](#screenshots)
-- [Links](#links)
 - [My process](#my-process)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
 - [Useful resources](#useful-resources)
+
+### Links
+
+- Solution URL: (https://www.frontendmentor.io/solutions/clipboard-landing-page-with-css-grid-and-flexbox-vebzO1g9zi)
+- Live Site URL: (https://smgy94.github.io/front-end-mentor-projects/clipboard-landing-page-master/)
 
 ### Original Design
 
@@ -25,11 +28,6 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 ![](./design/screenshot01-desktop.png)
 
 ![](./design/screenshot01-mobile.png)
-
-### Links
-
-- Solution URL: (https://www.frontendmentor.io/solutions/clipboard-landing-page-with-css-grid-and-flexbox-vebzO1g9zi)
-- Live Site URL: (https://smgy94.github.io/front-end-mentor-projects/clipboard-landing-page-master/)
 
 ## My process
 
