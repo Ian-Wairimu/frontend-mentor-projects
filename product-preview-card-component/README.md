@@ -2,10 +2,15 @@
 
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+### Links
+
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-css-grid-flexbox-javascript-V9lcetKHdw]
+- Live Site URL: [https://smgy94.github.io/front-end-mentor-projects/product-preview-card-component/]
+
 ## Table of contents
 
-- [Screenshot](#screenshot)
 - [Links](#links)
+- [Screenshot](#screenshot)
 - [My process](#my-process)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
@@ -16,11 +21,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ### Screenshot
 
 ![](./design/screenshot.png)
-
-### Links
-
-- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-css-grid-flexbox-javascript-V9lcetKHdw]
-- Live Site URL: [https://smgy94.github.io/front-end-mentor-projects/product-preview-card-component/]
 
 ## My process
 
