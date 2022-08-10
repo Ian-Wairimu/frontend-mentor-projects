@@ -15,12 +15,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./design/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/product-preview-card-component-css-grid-flexbox-javascript-V9lcetKHdw)
-- Live Site URL: [Add live site URL here](https://smgy94.github.io/front-end-mentor-projects/product-preview-card-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-css-grid-flexbox-javascript-V9lcetKHdw]
+- Live Site URL: [https://smgy94.github.io/front-end-mentor-projects/product-preview-card-component/]
 
 ## My process
 
@@ -28,7 +28,7 @@ I began by opening the original design in Adobe Photoshop. I then broke the desi
 
 This visual aid makees it easy for me to re-create the desktop / mobile design layout in CSS Grid using grid-template-areas.
 
-![](./myprocess.png)
+![](./design/myprocess.png)
 
 ### Built with
 
