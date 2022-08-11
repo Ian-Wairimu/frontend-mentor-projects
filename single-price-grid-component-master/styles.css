@@ -60,7 +60,7 @@ p {
   width: clamp(30%, 90%, 95%);
 }
 
-.paragraph-grey {
+.list {
   font-size: 0.9rem;
   line-height: 1.8;
   color: var(--Light-Gray);
