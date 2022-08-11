@@ -10,17 +10,24 @@
 }
 
 :root {
+  --Body-Background: hsla(71, 73%, 54%, 0.697);
   --Cyan: hsl(179, 62%, 43%);
   --Lighter-Cyan: hsl(179, 47%, 52%);
   --Bright-Yellow: hsl(71, 73%, 54%);
   --Light-Gray: hsl(204, 43%, 93%);
   --Dark-Gray: hsl(200, 3%, 23%);
   --Grayish-Blue: hsl(218, 22%, 67%);
+  --Lighter-Gray: #97e0e2;
 }
 
 body {
   font-family: "Karla", sans-serif;
   font-size: 16px;
+  background: linear-gradient(
+    120deg,
+    hsla(252, 73%, 54%, 0.5),
+    hsl(57, 100%, 50%, 0.2)
+  );
 }
 
 /********* OUTER CONTAINER  *********/
@@ -29,11 +36,9 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: var(--Light-Gray);
 }
 
 /********* TEXT STYLES  *********/
-
 .title {
   font-size: 1.5rem;
   color: var(--Cyan);
@@ -49,9 +54,17 @@ h3 {
 }
 
 p {
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 2;
   color: var(--Light-Gray);
-  width: clamp(50%, 85%, 90%);
+  width: clamp(30%, 90%, 95%);
+}
+
+.paragraph-grey {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--Light-Gray);
+  width: clamp(30%, 90%, 95%);
 }
 
 /********* BUTTON  *********/
@@ -83,25 +96,24 @@ p {
   grid-template-areas:
     "a a"
     "b c";
-
   max-width: 45rem;
-  /* height: 50vh; */
 }
 
 .card-container > * {
-  gap: 1rem;
   padding: 3rem;
 }
 /********* JOIN OUR COMMUNITY  *********/
 .join-our-community {
   grid-area: a;
+  gap: 1.5rem;
   background-color: #fff;
   display: grid;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .join-our-community p {
   color: var(--Grayish-Blue);
+  font-size: 1rem;
 }
 
 /********* MONHTLY SUBSCRIPTION  *********/
@@ -110,6 +122,18 @@ p {
   background-color: var(--Cyan);
   display: grid;
   border-radius: 0px 0px 0px 10px;
+}
+
+/********* PRICE  *********/
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--Light-Gray);
+}
+
+span {
+  font-size: 1rem;
+  color: var(--Lighter-Gray);
 }
 
 /********* WHY US  *********/
@@ -122,6 +146,60 @@ p {
 
 /********* MOBILE VIEW  *********/
 @media (max-width: 500px) {
+  /********* OUTER CONTAINER  *********/
+  .outer-container {
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /********* TEXT STYLES  *********/
+
+  .title {
+    font-size: 1.3rem;
+    color: var(--Cyan);
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: var(--Bright-Yellow);
+  }
+
+  h3 {
+    color: var(--Light-Gray);
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 2;
+    color: var(--Light-Gray);
+    width: 100%;
+  }
+
+  /********* BUTTON  *********/
+  .btn {
+    background-color: var(--Bright-Yellow);
+    padding: 1rem;
+    width: 100%;
+    color: var(--Dark-Gray);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .twitter-icon {
+    width: 1.5rem;
+    fill: var(--Dark-Gray);
+  }
+
+  /********* CARD CONTAINER  *********/
   .card-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -129,9 +207,51 @@ p {
       "a"
       "b"
       "c";
+    height: auto;
+    margin-inline: 2rem;
+  }
 
-    max-width: 45rem;
-    /* height: 50vh; */
-    margin-inline: 1rem;
+  .card-container > * {
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  /********* JOIN OUR COMMUNITY  *********/
+  .join-our-community {
+    grid-area: a;
+    background-color: #fff;
+    display: grid;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .join-our-community p {
+    color: var(--Grayish-Blue);
+    font-size: 0.9rem;
+  }
+
+  /********* MONHTLY SUBSCRIPTION  *********/
+  .monthly-subscription {
+    grid-area: b;
+    background-color: var(--Cyan);
+    display: grid;
+    border-radius: 0;
+  }
+
+  /********* PRICE  *********/
+  .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--Light-Gray);
+  }
+
+  span {
+    font-size: 1rem;
+  }
+
+  /********* WHY US  *********/
+  .why-us {
+    grid-area: c;
+    background-color: var(--Lighter-Cyan);
+    display: grid;
+    border-radius: 0px 0px 10px 10px;
   }
 }
