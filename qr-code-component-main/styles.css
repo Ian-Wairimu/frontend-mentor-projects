@@ -13,12 +13,12 @@
   --Light-gray: hsl(212, 45%, 89%);
   --Grayish-blue: hsl(220, 15%, 55%);
   --Dark-blue: hsl(218, 44%, 22%);
+  --Background-color: #345995ab;
 }
 
 body {
   font-size: 15px;
   font-family: "Outfit", "Sans-serif";
-  background-color: var(--Light-gray);
 }
 
 h1,
@@ -26,32 +26,35 @@ p {
   line-height: 1.2;
 }
 
+a {
+  color: #fff;
+}
+
 img {
   width: 100%;
 }
 
 /********** Outer Container **********/
-.outer-container {
+/* .outer-container {
   display: grid;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: var(--Light-gray);
+  background-color: var(--Background-color);
 }
 
 /********** Card Container **********/
-.card-container {
+/* .card-container {
   display: grid;
-  grid-template-rows: 2fr 1fr;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   gap: 1.5rem;
   background-color: var(--White);
   border-radius: 20px;
   padding: 1rem;
-  width: 20rem;
-
+  max-width: 20rem;
   text-align: center;
+  margin-inline: 1rem;
 }
 
 .card-image {
@@ -74,4 +77,105 @@ img {
 .card-text {
   color: var(--Grayish-blue);
   width: 90%;
+} 
+
+/* CARD FLIP TEST */
+/* CARD FLIP TEST */
+/* CARD FLIP TEST */
+
+.main-container {
+  display: grid;
+  height: 100vh;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--Background-color);
+}
+
+.thecard {
+  position: absolute;
+  width: clamp(10rem, 20rem, 30rem);
+  height: 30rem;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  background-color: rgb(30, 0, 198);
+  border-radius: 20px;
+
+  display: grid;
+
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
+  border-radius: 20px;
+
+  text-align: center;
+  margin-inline: 1rem;
+}
+
+.card-image {
+  border-radius: 15px;
+}
+
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+  color: #333;
+  border-radius: 20px;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card-text-content {
+  display: grid;
+  gap: 0rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.card-title {
+  color: var(--Dark-blue);
+  font-size: 1.4rem;
+}
+
+.card-text {
+  color: var(--Grayish-blue);
+  width: 90%;
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #fff;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  padding: 1rem;
+  align-content: center;
+  justify-items: center;
+  display: grid;
+  background-color: #345995;
+}
+
+.twitter-icon-bg {
+  position: absolute;
+  top: 8rem;
+
+  border: 2px solid #eac435;
+  /* background-color: #eac435; */
+  border-radius: 50%;
+}
+
+.twitter-icon {
+  width: 4.5rem;
+  fill: #fff;
+  padding: 0.8rem;
 }
