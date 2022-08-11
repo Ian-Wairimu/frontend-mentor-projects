@@ -147,7 +147,7 @@ span {
 /********* MOBILE VIEW  *********/
 @media (max-width: 500px) {
   body {
-    height: 110vh;
+    height: 10vh;
   }
   /********* OUTER CONTAINER  *********/
   .outer-container {
