@@ -146,6 +146,9 @@ span {
 
 /********* MOBILE VIEW  *********/
 @media (max-width: 500px) {
+  body {
+    height: 110vh;
+  }
   /********* OUTER CONTAINER  *********/
   .outer-container {
     display: grid;
@@ -209,6 +212,7 @@ span {
       "c";
     height: auto;
     margin-inline: 2rem;
+    margin: 5rem 2rem;
   }
 
   .card-container > * {
