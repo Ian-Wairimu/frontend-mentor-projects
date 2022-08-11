@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Lighter-Cyan: hsl(179, 47%, 52%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Dark-Gray: hsl(200, 3%, 23%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+/********* OUTER CONTAINER  *********/
+.outer-container {
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Light-Gray);
+}
+
+/********* TEXT STYLES  *********/
+
+.title {
+  font-size: 1.5rem;
+  color: var(--Cyan);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--Bright-Yellow);
+}
+
+h3 {
+  color: var(--Light-Gray);
+}
+
+p {
+  line-height: 1.5;
+  color: var(--Light-Gray);
+  width: clamp(50%, 85%, 90%);
+}
+
+/********* BUTTON  *********/
+.btn {
+  background-color: var(--Bright-Yellow);
+  padding: 1rem;
+  width: 100%;
+  color: var(--Dark-Gray);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.twitter-icon {
+  width: 1.5rem;
+  fill: var(--Dark-Gray);
+}
+
+/********* CARD CONTAINER  *********/
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "a a"
+    "b c";
+
+  max-width: 45rem;
+  /* height: 50vh; */
+}
+
+.card-container > * {
+  gap: 1rem;
+  padding: 3rem;
+}
+/********* JOIN OUR COMMUNITY  *********/
+.join-our-community {
+  grid-area: a;
+  background-color: #fff;
+  display: grid;
+  border-radius: 10px;
+}
+
+.join-our-community p {
+  color: var(--Grayish-Blue);
+}
+
+/********* MONHTLY SUBSCRIPTION  *********/
+.monthly-subscription {
+  grid-area: b;
+  background-color: var(--Cyan);
+  display: grid;
+  border-radius: 0px 0px 0px 10px;
+}
+
+/********* WHY US  *********/
+.why-us {
+  grid-area: c;
+  background-color: var(--Lighter-Cyan);
+  display: grid;
+  border-radius: 0px 0px 10px 0px;
+}
+
+/********* MOBILE VIEW  *********/
+@media (max-width: 500px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+
+    max-width: 45rem;
+    /* height: 50vh; */
+    margin-inline: 1rem;
+  }
+}
