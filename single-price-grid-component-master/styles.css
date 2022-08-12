@@ -213,7 +213,7 @@ span {
       "a"
       "b"
       "c";
-    margin-inline: 2rem;
+
     margin: 5rem 2rem;
   }
 
@@ -259,5 +259,6 @@ span {
     background-color: var(--Lighter-Cyan);
     display: grid;
     border-radius: 0px 0px 10px 10px;
+    margin-bottom: 5rem;
   }
 }
