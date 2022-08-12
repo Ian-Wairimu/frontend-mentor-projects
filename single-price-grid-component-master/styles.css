@@ -20,6 +20,11 @@
   --Lighter-Gray: #97e0e2;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Karla", sans-serif;
   font-size: 16px;
@@ -28,6 +33,7 @@ body {
     hsla(252, 73%, 54%, 0.5),
     hsl(57, 100%, 50%, 0.2)
   );
+  background-repeat: no-repeat;
 }
 
 /********* OUTER CONTAINER  *********/
@@ -146,13 +152,9 @@ span {
 
 /********* MOBILE VIEW  *********/
 @media (max-width: 500px) {
-  body {
-    height: 100vh;
-  }
   /********* OUTER CONTAINER  *********/
   .outer-container {
     display: grid;
-    height: 100vh;
     align-items: center;
     justify-content: center;
   }
@@ -210,7 +212,6 @@ span {
       "a"
       "b"
       "c";
-    height: auto;
     margin-inline: 2rem;
     margin: 5rem 2rem;
   }
