@@ -79,21 +79,25 @@ p {
   background-color: var(--Bright-Yellow);
   padding: 1rem;
   width: 100%;
-  color: var(--Dark-Gray);
   cursor: pointer;
   border-radius: 5px;
+}
+
+#btn-text {
+  color: var(--Dark-Gray);
+  width: 50%;
 }
 
 .cta {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
 }
 
 .twitter-icon {
   width: 1.5rem;
   fill: var(--Dark-Gray);
+  margin-right: 10px;
 }
 
 /********* CARD CONTAINER  *********/
