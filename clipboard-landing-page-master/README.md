@@ -1,3 +1,9 @@
+### Links
+
+- Solution URL: (https://www.frontendmentor.io/solutions/clipboard-landing-page-with-css-grid-and-flexbox-vebzO1g9zi)
+- Live Site URL: (https://smgy94.github.io/front-end-mentor-projects/clipboard-landing-page-master/)
+
+
 # Frontend Mentor - Clipboard landing page solution
 
 This is a solution to the [Clipboard landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -12,10 +18,6 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 - [What I learned](#what-i-learned)
 - [Useful resources](#useful-resources)
 
-### Links
-
-- Solution URL: (https://www.frontendmentor.io/solutions/clipboard-landing-page-with-css-grid-and-flexbox-vebzO1g9zi)
-- Live Site URL: (https://smgy94.github.io/front-end-mentor-projects/clipboard-landing-page-master/)
 
 ### Original Design
 
@@ -76,3 +78,4 @@ My solution was to add a media query for tablets:
 
 - Frontend Mentor - [@Smgy94](https://www.frontendmentor.io/profile/Smgy94)
 - LinkedIn - (https://www.linkedin.com/in/shanemcgeown/)
+- Twitter - (https://twitter.com/ShaneMcGeown94)

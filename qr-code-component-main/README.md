@@ -1,12 +1,18 @@
+### Links
+
+- Solution URL: (https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H/hub/solution-to-qr-code-component-using-css-grid-N9KiClWSfk)
+- Live Site URL: (https://smgy94.github.io/front-end-mentor-projects/qr-code-component-main/)
+
+
 # Frontend Mentor - QR code component solution
 
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
+- [Links](#links)
 - [Overview](#overview)
 - [Screenshot](#screenshot)
-- [Links](#links)
 - [My process](#my-process)
 - [Built with](#built-with)
 - [Author](#author)
@@ -15,10 +21,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ![](./design/screenshot.png)
 
-### Links
-
-- Solution URL: (https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H/hub/solution-to-qr-code-component-using-css-grid-N9KiClWSfk)
-- Live Site URL: (https://smgy94.github.io/front-end-mentor-projects/qr-code-component-main/)
 
 ## My process
 
@@ -43,3 +45,5 @@ I then decided to CSS Grid to control the positioning of the card compenent and 
 ## Author
 
 - Frontend Mentor - [@Smgy94](https://www.frontendmentor.io/profile/Smgy94)
+- LinkedIn - (https://www.linkedin.com/in/shanemcgeown/)
+- Twitter - (https://twitter.com/ShaneMcGeown94)

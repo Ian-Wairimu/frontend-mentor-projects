@@ -1,3 +1,9 @@
+### Links
+
+- Solution URL: [https://www.frontendmentor.io/solutions/single-price-grid-component-html-css-js-text-change-o9JH20aUYx]
+- Live Site URL: [https://smgy94.github.io/front-end-mentor-projects/single-price-grid-component-master/]
+
+
 # Frontend Mentor - Single price grid component solution
 
 This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -12,10 +18,6 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 - [Useful resources](#useful-resources)
 - [Author](#author)
 
-### Links
-
-- Solution URL: [https://www.frontendmentor.io/solutions/single-price-grid-component-html-css-js-text-change-o9JH20aUYx]
-- Live Site URL: [https://smgy94.github.io/front-end-mentor-projects/single-price-grid-component-master/]
 
 ### Screenshot
 
@@ -49,4 +51,5 @@ I learned how to use Javascript to make change the text of a HTML element on mou
 ## Author
 
 - Frontend Mentor - [@Smgy94](https://www.frontendmentor.io/profile/Smgy94)
-- Twitter - [@ShaneMcGeown94](https://twitter.com/ShaneMcGeown94)
+- LinkedIn - (https://www.linkedin.com/in/shanemcgeown/)
+- Twitter - (https://twitter.com/ShaneMcGeown94)

@@ -1,3 +1,9 @@
+### Links
+
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-css-grid-flexbox-javascript-V9lcetKHdw]
+- Live Site URL: [https://smgy94.github.io/front-end-mentor-projects/product-preview-card-component/]
+
+
 # Frontend Mentor - Product preview card component solution
 
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -13,10 +19,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Useful resources](#useful-resources)
 - [Author](#author)
 
-### Links
-
-- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-css-grid-flexbox-javascript-V9lcetKHdw]
-- Live Site URL: [https://smgy94.github.io/front-end-mentor-projects/product-preview-card-component/]
 
 ### Screenshot
 
@@ -64,5 +66,5 @@ I will continue to work on using CSS Grid to control design layouts across multi
 ## Author
 
 - Frontend Mentor - [@Smgy94](https://www.frontendmentor.io/profile/Smgy94)
-- Twitter - [@Smgy94](https://twitter.com/ShaneMcGeown94)
-- LinkedIn -[ShaneMcGeown](https://www.linkedin.com/in/shanemcgeown/)
+- LinkedIn - (https://www.linkedin.com/in/shanemcgeown/)
+- Twitter - (https://twitter.com/ShaneMcGeown94)
