@@ -12,7 +12,7 @@
 :root {
   --Body-Background: hsla(71, 73%, 54%, 0.697);
   --Cyan: hsl(179, 62%, 43%);
-  --Lighter-Cyan: hsl(179, 47%, 52%);
+  --Lighter-Cyan: rgba(75, 190, 188, 0.69);
   --Bright-Yellow: hsl(71, 73%, 54%);
   --Light-Gray: hsl(204, 43%, 93%);
   --Dark-Gray: hsl(200, 3%, 23%);
