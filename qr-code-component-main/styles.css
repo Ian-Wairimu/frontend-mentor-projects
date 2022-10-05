@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  --Background-color: #345995ab;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Outfit", "Sans-serif";
+}
+
+h1,
+p {
+  line-height: 1.2;
+}
+
+a {
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+/********** OUTER CONTAINER **********/
+.outer-container {
+  display: grid;
+  height: 100vh;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--Background-color);
+}
+
+/********** THE CARD **********/
+.thecard {
+  position: absolute;
+  width: clamp(10rem, 20rem, 30rem);
+  height: 30rem;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  background-color: rgb(30, 0, 198);
+  border-radius: 20px;
+  background-color: var(--White);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card-image {
+  border-radius: 15px;
+}
+
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+/********** FRONT OF THE CARD **********/
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card-text-content {
+  display: grid;
+  gap: 0rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.card-title {
+  color: var(--Dark-blue);
+  font-size: 1.4rem;
+}
+
+.card-text {
+  color: var(--Grayish-blue);
+  width: 90%;
+}
+
+/********** BACK OF THE CARD **********/
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #fff;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  align-content: center;
+  justify-items: center;
+  display: grid;
+  background-color: #345995;
+  font-size: 1.1rem;
+}
+
+.twitter-icon-bg {
+  position: absolute;
+  top: 8rem;
+  border: 2px solid #eac435;
+  border-radius: 50%;
+}
+
+.twitter-icon {
+  width: 4.5rem;
+  fill: #fff;
+  padding: 0.8rem;
+}
