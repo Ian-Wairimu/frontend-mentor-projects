@@ -20,10 +20,6 @@
   --Lighter-Gray: #97e0e2;
 }
 
-html,
-body {
-  min-height: 100%;
-}
 
 body {
   font-family: "Karla", sans-serif;
@@ -37,7 +33,7 @@ body {
   background-attachment: fixed;
 }
 
-/********* OUTER CONTAINER  *********/
+/* Outer Container */
 .outer-container {
   display: grid;
   height: 100vh;
@@ -45,7 +41,7 @@ body {
   justify-content: center;
 }
 
-/********* TEXT STYLES  *********/
+/* Text Syles */
 .title {
   font-size: 1.5rem;
   color: var(--Cyan);
@@ -74,18 +70,18 @@ p {
   width: clamp(30%, 90%, 95%);
 }
 
-/********* BUTTON  *********/
-.btn {
-  background-color: var(--Bright-Yellow);
-  padding: 1rem;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
+/* Button */
 #btn-text {
   color: var(--Dark-Gray);
-  width: 50%;
+
+} 
+
+.btn {
+  background-color: var(--Bright-Yellow);
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .cta {
@@ -100,7 +96,7 @@ p {
   margin-right: 10px;
 }
 
-/********* CARD CONTAINER  *********/
+/* Card Container */
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -113,7 +109,8 @@ p {
 .card-container > * {
   padding: 3rem;
 }
-/********* JOIN OUR COMMUNITY  *********/
+
+/* Join Our Community */
 .join-our-community {
   grid-area: a;
   gap: 1.5rem;
@@ -127,7 +124,7 @@ p {
   font-size: 1rem;
 }
 
-/********* MONHTLY SUBSCRIPTION  *********/
+/* Monthly Subscription */
 .monthly-subscription {
   grid-area: b;
   background-color: var(--Cyan);
@@ -135,7 +132,6 @@ p {
   border-radius: 0px 0px 0px 10px;
 }
 
-/********* PRICE  *********/
 .price {
   font-size: 2rem;
   font-weight: bold;
@@ -147,7 +143,7 @@ span {
   color: var(--Lighter-Gray);
 }
 
-/********* WHY US  *********/
+/* Why Us */
 .why-us {
   grid-area: c;
   background-color: var(--Lighter-Cyan);
@@ -155,16 +151,14 @@ span {
   border-radius: 0px 0px 10px 0px;
 }
 
-/********* MOBILE VIEW  *********/
+/* Mobile View */
 @media (max-width: 500px) {
-  /********* OUTER CONTAINER  *********/
+  /* Outer Container */
   .outer-container {
     display: grid;
     align-items: center;
     justify-content: center;
   }
-
-  /********* TEXT STYLES  *********/
 
   .title {
     font-size: 1.3rem;
@@ -187,7 +181,7 @@ span {
     width: 100%;
   }
 
-  /********* BUTTON  *********/
+ /* Button */
   .btn {
     background-color: var(--Bright-Yellow);
     padding: 1rem;
@@ -209,7 +203,7 @@ span {
     fill: var(--Dark-Gray);
   }
 
-  /********* CARD CONTAINER  *********/
+  /* Card Container */
   .card-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -217,7 +211,6 @@ span {
       "a"
       "b"
       "c";
-
     margin: 5rem 2rem;
   }
 
@@ -225,7 +218,8 @@ span {
     gap: 1rem;
     padding: 1.5rem;
   }
-  /********* JOIN OUR COMMUNITY  *********/
+
+  /* Join Our Community */
   .join-our-community {
     grid-area: a;
     background-color: #fff;
@@ -238,7 +232,7 @@ span {
     font-size: 0.9rem;
   }
 
-  /********* MONHTLY SUBSCRIPTION  *********/
+  /* Monthly Subscription */
   .monthly-subscription {
     grid-area: b;
     background-color: var(--Cyan);
@@ -246,7 +240,6 @@ span {
     border-radius: 0;
   }
 
-  /********* PRICE  *********/
   .price {
     font-size: 2rem;
     font-weight: bold;
@@ -257,7 +250,7 @@ span {
     font-size: 1rem;
   }
 
-  /********* WHY US  *********/
+ /* Why Us */
   .why-us {
     grid-area: c;
     background-color: var(--Lighter-Cyan);
