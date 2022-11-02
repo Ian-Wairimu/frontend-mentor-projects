@@ -50,6 +50,7 @@ img {
     color: var(--Very-dark-blue);
     font-size: 3.5rem;
     font-weight: 900;
+    width: 80%;
 }
 
 .title-02 {
@@ -126,9 +127,21 @@ nav ul li a:hover {
     color: var(--Soft-red);
 }
 
+.burger-menu {
+    display: none;
+    width:3rem
+}
 
 
 /* MAIN */
+.main-01 {
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 .main-03 {
     display: flex;
     flex-direction: column;
@@ -188,6 +201,7 @@ article p {
     margin: 5rem 10rem 8rem 10rem;
     gap: 3rem 2rem;
     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px 3fr 1fr 1fr;
     grid-template-areas: 
     "nav nav nav"
     "main01 main01 aside"
@@ -230,3 +244,193 @@ aside {
 
 }
 
+
+/* Mobile View */
+@media screen and (max-width:500px) {
+
+    /* * {
+        border: 1px solid red;
+    } */
+
+    .grid-container {
+            display: grid;
+            height: 100vh;
+            margin: 0rem;
+            gap: 3rem 2rem;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "nav"
+                "main01"
+                "main02"
+                "main03"
+                "aside"
+                "article-01"
+                "article-02"
+                "article-03"
+            ;
+        }
+
+    body {
+        margin: 0 auto;
+        background-color: yellow;
+    }
+
+
+
+    /* REUSABLE CLASSES */
+    .primary-text {
+        line-height: 2;
+        letter-spacing: 1.2px;
+        font-size: 1rem;
+    }
+
+    .secondary-text {
+        color: var(--Grayish-blue)
+    }
+
+    .title-01 {
+        color: var(--Very-dark-blue);
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+
+    .title-02 {
+        color: var(--Soft-orange);
+        font-size: 2.5rem;
+    }
+
+    .title-03 {
+        color: var(--Off-white);
+        font-size: 1.5rem;
+    }
+
+    .title-03:hover {
+        color: var(--Soft-orange);
+    }
+
+    .title-04 {
+        color: var(--Grayish-blue);
+        font-size: 1.7rem;
+    }
+
+    .title-05 {
+        color: var(--Very-dark-blue);
+        font-size: 1.1rem;
+        font-weight: 900;
+    }
+
+    .title-05:hover {
+        color: var(--Soft-red)
+    }
+
+    hr {
+        color: var(--Dark-grayish-blue);
+    }
+
+    .btn {
+        background-color: var(--Soft-red);
+        color: var(--Off-white);
+        padding: 1rem 3.5rem;
+        text-transform: uppercase;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: var(--Very-dark-blue);
+    }
+
+
+
+    /* NAVBAR */
+    #logo {
+        width: 4rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 4rem;
+    }
+
+    nav ul li a {
+        color: var(--Dark-grayish-blue);
+        display: none;
+    }
+
+    nav ul li a:hover {
+        color: var(--Soft-red);
+    }
+
+    .burger-menu {
+        display: block;
+        width: 3rem
+    }
+
+
+
+    /* MAIN */
+
+   .main-01 {
+       background-image: url(./assets/images/image-web-3-mobile.jpg);
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+    
+   }
+
+    .main-03 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+
+
+    /* ASIDE */
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .title-03 a {
+        color: var(--Off-white);
+    }
+
+    .title-03 a:hover {
+        color: var(--Soft-orange);
+    }
+
+
+
+    /* Articles */
+    .article {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .article img {
+        width: 6rem;
+    }
+
+    .article-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    article p {
+        color: var(--Dark-grayish-blue);
+        width: 80%;
+    }
+}
